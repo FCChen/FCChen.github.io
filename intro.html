@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>Fu-Chen Chen | Research</title>
+<link rel="stylesheet" type="text/css" media="screen" href="./lib/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="./css/header.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="./css/body.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="./css/footer.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="./css/index.css" />
+<!--[if lt IE 9]>
+<script src="./lib/html5shiv.js"></script>
+<script src="./lib/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="container">
+<div class="row"><div class="col-md-10 col-md-offset-1">
+<nav class="navbar navbar-default" role="navigation">
+<div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle Navs</span>
+        <span class='icon-bar'></span>
+        <span class='icon-bar'></span>
+        <span class='icon-bar'></span>
+    </button>
+    <a class="navbar-brand" href="./index.html">Fu-Chen Chen</a>
+</div>
+<div class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav">
+        <li><a href="./resume.html">CV&amp;Resume</a></li>
+        <li class="active"><a href="./demo.html">Research</a></li>
+        <li><a href="./project.html">Project</a></li>
+        <li><a href="./work.html">Work</a></li>
+        <li><a href="./video.html">Avocation</a></li>
+    </ul>
+</div>
+</nav>
+</div><div class="col-md-1"></div></div><div class="row header"><div class="col-md-10 col-md-offset-1">
+    <img src="./img/header/penguin.jpg" class="img-responsive header-background" />
+    <h1 class="header-title">Frame Rate Up-Conversion</h1>
+</div><div class="col-md-1"></div></div><div class="row page-body"><div class="col-md-10 col-md-offset-1">
+<ul class="nav nav-pills nav-justified">
+    <li><a href="./demo.html">Demo</a></li>
+    <li class="active"><a href="./intro.html">Introduction</a></li>
+    <li><a href="./link.html">Links</a></li>
+</ul>
+</div><div class="col-md-1"></div></div>
+<div class="row page-body">
+    <div class="col-md-5 col-md-offset-1">
+        <h1 class="page-title">Prelude<a href="pdf/01_Prelude.pdf"><img src="./img/icon/pdf_slides.png" hspace="50"/></a></h1>
+        <p>Frame rate up-conversion is a technique that up-converts the frame rate of video sequence by analyzing the object motion of it and interpolating two or more frames (Fig. 1). This technique is applied on LCD for eliminating the LCD motion blur problem in recent years as more frame rate can reduce the blur width (Fig. 2). I developed a multi-rate frame rate up-conversion algorithm and architecture that is compatible to current standard of LCD system which can convert up to 3840x2160 Quad HD frame size with 24Hz to 120Hz up-conversion and 60Hz to 120Hz up-conversion mode.</p>
+    </div>
+    <div class="col-md-5">
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p><img src="./img/research/intro/01.jpg" class="img-responsive" /></p>
+        <p style="text-align: center">Fig. 1 - Overview</p>
+        <!--Fig. 1 - Overview-->
+    </div>    
+</div>
+<div class="row page-body"><div class="col-md-10 col-md-offset-1">
+    <p><img src="./img/research/intro/02.jpg" class="img-responsive" /></p>
+    <p align="center" style="text-align: center">Fig.  2 - Motion blur reduction with higher frame rate</p>
+</div><div class="col-md-1"></div></div>
+<div class="row page-body"><div class="col-md-10 col-md-offset-1">
+<hr align="center" width="100%">
+    <h1 class="page-title">Algorithm<a href="pdf/02_Algorithm.pdf"><img src="./img/icon/pdf_slides.png" hspace="50"/></a></h1>
+</div><div class="col-md-1"></div></div>
+<div class="row page-body"><div class="col-md-10 col-md-offset-1">
+    <p><img src="./img/research/intro/03.jpg" class="img-responsive" /></p>
+    <p style="text-align: center">Fig. 3 - Overall  algorithm</p>
+</div><div class="col-md-1"></div></div>
+<div class="row page-body"><div class="col-md-10 col-md-offset-1">
+    <p>The proposed algorithm flow is shown in Fig. 3. The motion estimation and MV processing are true motion based with Markov random field modeling, which generate the reliable motion vector field in Fig. 4. For sub-block division, I provide a simple and precise way that guarantee to detect the region with artifact that often happen in moving objects as in Fig. 5. The post-processing refines those sub-blocks with correct motion vectors and results in better visual quality (Fig. 6).
+    </p>
+</div><div class="col-md-1"></div></div>
+<div class="row page-body">
+    <div class="col-md-5 col-md-offset-1">
+        <p><img src="./img/research/intro/04.jpg" class="img-responsive" /></p>
+        <p style="text-align: center">Fig. 4 - MVF by motion estimation</p>
+    </div>
+    <div class="col-md-5">
+        <p><img src="./img/research/intro/05.jpg" class="img-responsive" /></p>
+        <p style="text-align: center">Fig. 5 - Sub-block region</p>
+    </div>
+    <div class="col-md-1">
+    </div>
+</div>
+<div class="row page-body"><div class="col-md-10 col-md-offset-1">
+    <p><img src="./img/research/intro/06.jpg" class="img-responsive" /></p>
+    <p style="text-align: center">Fig. 6 - Examples of post-processing</p>
+</div><div class="col-md-1"></div></div>
+<div class="row"><div class="col-md-10 col-md-offset-1">
+<hr align="center" width="100%">
+<h1 class="page-title">Architecture<a href="pdf/03_Architecture.pdf"><img src="./img/icon/pdf_slides.png" hspace="50"/></a></h1>
+<p>Fig. 7 shows the overview of the architecture that many of modules share the same computation unit and SRAM. The special scan order with ping-pong SRAM usage is showed by Fig. 8 for pipeline bubble reduction. There is a unit (Fig. 10) that group the motion vectors lie within a range in for frame data sharing. The motion compensation require large amount of data read/write, so I provide an inverse compensation scheduling that only read 1 frame and write it to 4 frames in 1:5 up-conversion, which consumes minimum amount of bandwidth and processing (Fig. 9).</p>
+</div><div class="col-md-1"></div></div>
+<div class="row page-body"><div class="col-md-10 col-md-offset-1">
+    <p><img src="./img/research/intro/07.jpg" class="img-responsive" /></p>
+    <p style="text-align: center">Fig. 7 - Ping-pong SRAM usage</p>
+</div><div class="col-md-1"></div></div>
+<div class="row page-body">
+    <div class="col-md-5 col-md-offset-1">
+        <p><img src="./img/research/intro/08.jpg" class="img-responsive" /></p>
+        <p style="text-align: center">Fig. 8 - Overview of architecture</p>
+    </div>
+    <div class="col-md-5">
+        <p><img src="./img/research/intro/10.jpg" class="img-responsive" /></p>
+        <p style="text-align: center">Fig. 9 - Inverse scheduling</p>
+    </div>
+    <div class="col-md-1">
+    </div>
+</div>
+<div class="row page-body"><div class="col-md-10 col-md-offset-1">
+    <p><img src="./img/research/intro/09.jpg" class="img-responsive" /></p>
+    <p style="text-align: center">Fig. 10 - Motion vector grouping unit</p>
+</div><div class="col-md-1"></div></div>
+<div class="row"><div class="col-md-10 col-md-offset-1">
+<hr align="center" width="100%">
+<h1 class="page-title">Results<a href="pdf/04_Results.pdf"><img src="./img/icon/pdf_slides.png" hspace="50"/></a></h1>
+<p>Fig. 11 shows that the design provides 24Hz to 120Hz and 60Hz to 120Hz up-conversion for 3840x2160 frame size with only 273K gate count and 9984 bytes single port SRAM which has the best hardware efficiency comparing to previous works [1] [2]. I select four sequences (Fig. 12) up-converted by different algorithms [1] [2] [3] for performance evaluation. For subjective evaluation, subjects vote the best one of their own, and the final shows that above 79% of subjects prefer the proposed algorithm (Fig. 13). For objective evaluation, I compare the PSNR of up-converted frames to the original ones in 12Hz to 24Hz conversions. The PSNR of the proposed algorithm is also higher than other methods (Fig. 14).
+Fig. 13 - Subjective evaluation result</p>
+</div><div class="col-md-1"></div></div>
+<div class="row page-body"><div class="col-md-10 col-md-offset-1">
+    <p><img src="./img/research/intro/11.jpg" class="img-responsive" /></p>
+    <p style="text-align: center">Fig. 11 - Design specification and hardware  efficiency comparison</p>
+</div><div class="col-md-1"></div></div>
+<div class="row page-body">
+    <div class="col-md-5 col-md-offset-1">
+        <p><img src="./img/research/intro/12.jpg" class="img-responsive" /></p>
+        <p style="text-align: center">Fig. 12 - Sequences for evaluation</p>
+    </div>
+    <div class="col-md-5">
+        <p><img src="./img/research/intro/13.jpg" class="img-responsive" /></p>
+        <p style="text-align: center">Fig. 13 - Subjective evaluation result</p>
+    </div>
+    <div class="col-md-1">
+    </div>
+</div>
+<div class="row page-body"><div class="col-md-10 col-md-offset-1">
+    <p><img src="./img/research/intro/14.jpg" class="img-responsive" /></p>
+    <p style="text-align: center">Fig. 14 - Objective evaluation result</p>
+</div><div class="col-md-1"></div></div>
+<div class="row"><div class="col-md-10 col-md-offset-1">
+<p class="text-reference"><strong>References</strong></p>
+<ul class="list-unstyled">
+	<font size="3.5">
+    <ul>
+    <li>[1 - GME] Hsu Kung-Yen, Shao-Yi Chien, Frame Rate Up-Conversion Algorithm and Hardware Architecture Design for High Definition Liquid Crystal Display, Master thesis of GIEE, NTU, Nov. 2008</li>
+    <li>[2 - Percept.] Ya-Ting Wang, Shao-Yi Chien, Algorithm and Hardware Architecture Design of Perception-Aware Motion Compensated Frame Rate Up-Conversion, Master thesis of GIEE, NTU, Feb. 2010</li>
+    <li>[3 - Yang] Ya-Ting Yang  Yi-Shin Tung  Ja-Ling Wu, Quality Enhancement of Frame Rate Up-Converted Video by Adaptive Frame Skip and Reliable Motion Extraction, IEEE Transactions on Circuits and Systems for Video Technology, Dec. 2007, pp.1700 - 1713</li>
+    </ul>
+    </font>
+</ul>
+</div><div class="col-md-1"></div></div><div class="row"><div class="col-md-10 col-md-offset-1 footer">
+    <small>2013 &copy; Fu-Chen Chen | Personal Website | E-mail:<!--test@gmail.com--> squallinck</small><img src="img/icon/aat.bmp" width="20" height="20" /><small>gmail<!--fakemail@gmail.com-->.com</small>
+</div><div class="col-md-1"></div></div>
+</div>
+<script type="text/javascript" src="./lib/jquery.min.js"></script>
+<script type="text/javascript" src="./lib/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./js/youtube.js"></script>
+</body>
+</html>
